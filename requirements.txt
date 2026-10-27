@@ -1,0 +1,9 @@
+fastapi
+pydantic
+uvicorn
+apscheduler
+slowapi
+python-dotenv
+redis
+supabase
+requests
