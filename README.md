@@ -70,7 +70,6 @@ Aeglis API (FastAPI)
 ├── captcha_engine.py        # CAPTCHA challenge logic and verification engine
 ├── redis_client.py         # Redis connection bootstrap
 ├── requirements.txt        # Python dependencies
-├── readme.py               # Generates this README.md
 ├── utils/
 │   └── supabase_db.py      # Supabase client bootstrap and auth helper
 └── README.md               # Product documentation
