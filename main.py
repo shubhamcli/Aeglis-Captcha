@@ -135,7 +135,7 @@ async def create_challenge(request: Request, payload: ChallengeRequest = Challen
     return result
 
 @router.post("/verify", summary="Verify Telemetry and PoW")
-@limiter.limit("30/minute") # 🛡️ RATE LIMIT: Slightly higher for retries
+@limiter.limit("30/minute") #  RATE LIMIT: Slightly higher for retries
 async def verify_captcha(request: Request, payload: VerifyRequest, background_tasks: BackgroundTasks):
     """
     Called when the user interacts with the widget or background processing completes.
