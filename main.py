@@ -113,7 +113,7 @@ class CheckoutRequest(BaseModel):
 
 
 @router.post("/challenge", summary="Phase 1-3: Generate Verification Challenge")
-@limiter.limit("20/minute") # 🛡️ RATE LIMIT: 20 challenges per minute per IP
+@limiter.limit("20/minute") #  RATE LIMIT: 20 challenges per minute per IP
 async def create_challenge(request: Request, payload: ChallengeRequest = ChallengeRequest()):
     """
     Called when the Aeglis widget loads on the frontend.
